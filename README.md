@@ -58,3 +58,5 @@ Le C shell amélioré
 #### zsh 
 
 Le Z shell est compatible avec bash 
+
+[Commandes LINUX](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/cmd_linux.md)
