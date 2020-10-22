@@ -71,5 +71,113 @@ la programmation, la gestion des fichiers,...)
 * `cat rapport.txt | spell > faute.txt`
 * `read` (lit dans un script shell la ligne saisie à partir de l'entrée par défaut, le clavier)
 
-## Quelques commandes de l'administrateur
+## 2. Quelques commandes de l'administrateur
+### 2.1. Les commandes de gestion des utilisateurs
+* `w`(affiche les informations de connexion de l'utilisateur)
+* `who`(affiche la liste des utilisateurs connectés)
+* `whoami`(indique le "logon" de l'utilisateur)
+* `id` (identité de l'utilisateur actif, UID, GID)
+* `finger` (affiche des informations sur les utilisateurs)
+* `adduser` (ajouter un compte utilisateur, les UID des utilisateurs commencent à partir du numéro 500)
+* `useradd` (ajouter un compte utilisateur)
+* `userdel` (supprimer un compte utilisateur)
+* `usermod` (modifier les informations d'un compte utilisateur)
 
+### 2.2. Modification des droits d'accès
+* Les droits des fichiers d'un répertoire peuvent être affichés par la commande `ls -l`
+* Les droits d'accès apparaissent alors comme une liste de 10 symboles. 
+```
+drwxr-xr-x
+```
+Le premier symbole peut être « - », « d », soit « l », entres autres (toutes les options sur la page permissions Unix sur wikipédia)). Il indique la nature du fichier :
+
+* - : fichier classique
+* d : répertoire
+* l : lien symbolique
+
+Il se traduit de la manière suivante :
+
+* **d** : c'est un répertoire.
+* **rwx** pour le 1er groupe de 3 symboles : son propriétaire peut lire, écrire et exécuter.
+* **r-x** pour le 2e groupe de 3 symboles : le groupe peut uniquement lire et exécuter le fichier, sans pouvoir le modifier.
+* **r-x** pour le 3ème groupe de 3 symboles : le reste du monde peut uniquement lire et exécuter le fichier, sans pouvoir le modifier.
+`chmod`
+* Signification : *change mode*
+
+### 2.3. Quelques commande système
+
+`sudo`
+
+* Signification : *substitute user do*
+Permet d'exécuter des commandes en tant qu'un autre utilisateur, donc avec d'autres privilèges que les siens.
+      Options les plus fréquentes :
+              * `-s` : Importe les variables d'environnement du shell
+              * `-k` : Lorsque l'on utilise sudo, il garde en mémoire le mot de passe ; cette option déconnecte l'utilisateur et forcera à redemander un mot de passe si sudo est exécuté avant le timeout défini.
+              
+ `apt-get`
+* Signification : *avanced package tool - get*
+
+Permet l'​installation et la désinstallation ​de paquets ​en tenant compte des dépendances ainsi que le téléchargement des paquets ​s'ils sont sur une source réseau.
+Commandes les plus fréquentes :
+              * **update** : Met à jour la liste des paquets disponibles en fonction des sources fournies.
+              * **upgrade** : Met à jour tous les paquets déjà installés.
+              * **dist-upgrade** : Pareil ​à upgrade ​mais permet ​en plus de passer à une version ​supérieure du noyau et de certains paquets, sans changer de version d'​ubuntu.
+              * **install** : Installe un ou plusieurs paquets.
+              * **remove** : Supprime un ou plusieurs paquets.
+              * **clean** : Efface du système ​les installateurs,​ sans désinstaller de paquets.
+Options les plus fréquentes :
+              * `-f` : Utilisée avec install ou remove cette option permet de réparer un système dont les dépendances sont défectueuses.
+              * `-m` : Ignore les paquets manquants (à éviter si on ne sait pas exactement ce que l'on fait).
+              * `-s `: Fait une simulation des actions à mener sans rien toucher au système.
+              * `-y `: Répond automatiquement oui à toutes les questions.
+              * `-u `: Affiche les paquets mis à jour.
+              * `--purge` : À utiliser conjointement avec remove pour supprimer tout ce qui peut l'​être (fichiers de configuration par exemple, sauf ceux éventuellement présents dans /home).
+              * `--reinstall` : Réinstaller les paquets avec leur version plus récente.
+              
+Exemples d'utilisation :
+* `sudo apt-get update` (Met à jour la liste des paquets disponibles).
+* `sudo apt-get upgrade` (Met à jour tous les paquets ​installés).
+* `sudo apt-get install nom_paquet` (pour installer un paquets) 
+              
+## 3. Les opérateurs de redirection des Entrées/Sorties
+
+La redirection de la sortie standard (l'écran) vers un fichier permet de consulter le résultat ultérieurement et de le conserver. La redirection de l'entrée standard (le clavier) est moins usitée .La redirection entre processus  (entre commande ou entre programme avec le tube ou le pipe) permet de créer des "pipelines", c'est à dire une seule ligne de commande constituée d'une succession de commandes avec la sortie de chacune redirigée vers l'entrée de la suivante.
+
+* `|`(pipe AltGr+6)
+* `commande1 | commande2`
+* `ls | cat`
+* `cat fichier | lp`
+* `>` (redirection de la sortie standard, le fichier de destination écrase le précédent)
+* `commande > sortie`
+* `ls > fichier`
+* `commande 2> erreurs.txt` (redirige les erreurs de syntaxe, le flux "stden" vers un fichier)
+* `commande < entrée> sortie`
+* `<`(redirection de l'entré standard)
+* `commande < fichier d'entrée`
+* `>>`(redirection et concaténation en fin de fichier)
+* `cat fichier1 fichier2 >> ensemble`
+
+## 4. Les commandes d'archivage et de compression
+* `tar`(tape archive ressource, pour archiver ou restaurer des "tar file" avec l'extension ".tar")
+* `tar -cvf cible source` (archive la "source" dans la "cible")
+* `tar -xvf archive.tar` (restaure le fichier "archive.tar" dans le répertoire courant)
+* `tar -xvf archive.tar /tmp` (restaure le fichier "archive.tar" dans le répertoire "/tmp")
+* `tar -xvof archive.tar`
+* `compress` (compression de fichiers en un seul avec l'extension ".Z")
+`compress fichier`
+* `compress -v fichier`
+* `compress fichier.tar` (compression en un fichier avec l'extension **"tar.Z"**)
+* `uncompress`(décompression ou restauration des fichiers compressés avec l'extension ".Z")
+* `uncompress fichier.Z`
+* `uncompress fichier.tar.Z`
+* `uncompress un.Z deux.Z`
+* `gzip` (programme de compression GNU qui forme des fichiers compressés avec l'extension ".gz")
+* `gunzip` (programme de décompression GNU (g "unzip")des fichiers compressés avec l'extension ".gz")
+* `gunzip fichier.gz`
+* `zcat`
+* `zcat fichier.gz | more` (pour décompresser un fichier '.gz" et l'afficher sur la sortie standard (l'écran))
+* `zgrep`
+* `zgrep "disk" /répertoire/*.gz` (recherche le terme "disk" à l'intérieur de plusieurs fichiers compressés)
+
+## 5. Les programmes de connexion distante
+`ssh` ("secure shell")
