@@ -105,16 +105,17 @@ Il se traduit de la manière suivante :
 * Signification : *change mode*
 
 ### 2.3. Quelques commande système
-
-`sudo`
-
+```
+sudo
+```
 * Signification : *substitute user do*
 Permet d'exécuter des commandes en tant qu'un autre utilisateur, donc avec d'autres privilèges que les siens.
       Options les plus fréquentes :
               * `-s` : Importe les variables d'environnement du shell
               * `-k` : Lorsque l'on utilise sudo, il garde en mémoire le mot de passe ; cette option déconnecte l'utilisateur et forcera à redemander un mot de passe si sudo est exécuté avant le timeout défini.
-              
- `apt-get`
+```              
+ apt-get
+```
 * Signification : *avanced package tool - get*
 
 Permet l'​installation et la désinstallation ​de paquets ​en tenant compte des dépendances ainsi que le téléchargement des paquets ​s'ils sont sur une source réseau.
