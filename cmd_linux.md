@@ -126,13 +126,13 @@ Commandes les plus fréquentes :
               * **remove** : Supprime un ou plusieurs paquets.
               * **clean** : Efface du système ​les installateurs,​ sans désinstaller de paquets.
 Options les plus fréquentes :
-              * `-f` : Utilisée avec install ou remove cette option permet de réparer un système dont les dépendances sont défectueuses.
-              * `-m` : Ignore les paquets manquants (à éviter si on ne sait pas exactement ce que l'on fait).
-              * `-s `: Fait une simulation des actions à mener sans rien toucher au système.
-              * `-y `: Répond automatiquement oui à toutes les questions.
-              * `-u `: Affiche les paquets mis à jour.
-              * `--purge` : À utiliser conjointement avec remove pour supprimer tout ce qui peut l'​être (fichiers de configuration par exemple, sauf ceux éventuellement présents dans /home).
-              * `--reinstall` : Réinstaller les paquets avec leur version plus récente.
+              * `-f` (Utilisée avec install ou remove cette option permet de réparer un système dont les dépendances sont défectueuses).
+              * `-m`  (Ignore les paquets manquants (à éviter si on ne sait pas exactement ce que l'on fait).
+              * `-s ` (Fait une simulation des actions à mener sans rien toucher au système).
+              * `-y ` (Répond automatiquement oui à toutes les questions).
+              * `-u ` (Affiche les paquets mis à jour).
+              * `--purge`  (À utiliser conjointement avec remove pour supprimer tout ce qui peut l'​être fichiers de configuration par exemple, sauf ceux éventuellement présents dans **/home**).
+              * `--reinstall`  (Réinstaller les paquets avec leur version plus récente).
               
 Exemples d'utilisation :
 * `sudo apt-get update` (Met à jour la liste des paquets disponibles).
@@ -158,26 +158,26 @@ La redirection de la sortie standard (l'écran) vers un fichier permet de consul
 * `cat fichier1 fichier2 >> ensemble`
 
 ## 4. Les commandes d'archivage et de compression
-* `tar`(tape archive ressource, pour archiver ou restaurer des "tar file" avec l'extension ".tar")
+* `tar`(tape archive ressource, pour archiver ou restaurer des "tar file" avec l'extension "**.tar**")
 * `tar -cvf cible source` (archive la "source" dans la "cible")
 * `tar -xvf archive.tar` (restaure le fichier "archive.tar" dans le répertoire courant)
-* `tar -xvf archive.tar /tmp` (restaure le fichier "archive.tar" dans le répertoire "/tmp")
+* `tar -xvf archive.tar /tmp` (restaure le fichier "archive.tar" dans le répertoire "**/tmp**")
 * `tar -xvof archive.tar`
-* `compress` (compression de fichiers en un seul avec l'extension ".Z")
+* `compress` (compression de fichiers en un seul avec l'extension "**.Z**")
 `compress fichier`
 * `compress -v fichier`
 * `compress fichier.tar` (compression en un fichier avec l'extension **"tar.Z"**)
-* `uncompress`(décompression ou restauration des fichiers compressés avec l'extension ".Z")
+* `uncompress`(décompression ou restauration des fichiers compressés avec l'extension "**.Z**")
 * `uncompress fichier.Z`
 * `uncompress fichier.tar.Z`
 * `uncompress un.Z deux.Z`
-* `gzip` (programme de compression GNU qui forme des fichiers compressés avec l'extension ".gz")
-* `gunzip` (programme de décompression GNU (g "unzip")des fichiers compressés avec l'extension ".gz")
+* `gzip` (programme de compression GNU qui forme des fichiers compressés avec l'extension "**.gz**")
+* `gunzip` (programme de décompression GNU (g "unzip")des fichiers compressés avec l'extension "**.gz**")
 * `gunzip fichier.gz`
 * `zcat`
-* `zcat fichier.gz | more` (pour décompresser un fichier '.gz" et l'afficher sur la sortie standard (l'écran))
+* `zcat fichier.gz | more` (pour décompresser un fichier "**.gz**" et l'afficher sur la sortie standard (l'écran))
 * `zgrep`
-* `zgrep "disk" /répertoire/*.gz` (recherche le terme "disk" à l'intérieur de plusieurs fichiers compressés)
+* `zgrep "disk" /répertoire/*.gz` (recherche le terme "**disk**" à l'intérieur de plusieurs fichiers compressés)
 
 ## 5. Les programmes de connexion distante
 `ssh` ("secure shell")
