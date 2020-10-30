@@ -120,20 +120,21 @@ Permet d'exécuter des commandes en tant qu'un autre utilisateur, donc avec d'au
 
 Permet l'​installation et la désinstallation ​de paquets ​en tenant compte des dépendances ainsi que le téléchargement des paquets ​s'ils sont sur une source réseau.
 Commandes les plus fréquentes :
-              * **update** : Met à jour la liste des paquets disponibles en fonction des sources fournies.
-              * **upgrade** : Met à jour tous les paquets déjà installés.
-              * **dist-upgrade** : Pareil ​à upgrade ​mais permet ​en plus de passer à une version ​supérieure du noyau et de certains paquets, sans changer de version d'​ubuntu.
-              * **install** : Installe un ou plusieurs paquets.
-              * **remove** : Supprime un ou plusieurs paquets.
-              * **clean** : Efface du système ​les installateurs,​ sans désinstaller de paquets.
+ * **update** : Met à jour la liste des paquets disponibles en fonction des sources fournies.
+ * **upgrade** : Met à jour tous les paquets déjà installés.
+ * **dist-upgrade** : Pareil à upgrade mais permet en plus de passer à une version supérieure du noyau et de certains paquets, sans changer de version d'ubuntu.
+ * **install** : Installe un ou plusieurs paquets.
+ * **remove** : Supprime un ou plusieurs paquets.
+ * **clean** : Efface du système les installateurs, sans désinstaller de paquets.
+
 Options les plus fréquentes :
-              * `-f` (Utilisée avec install ou remove cette option permet de réparer un système dont les dépendances sont défectueuses).
-              * `-m`  (Ignore les paquets manquants (à éviter si on ne sait pas exactement ce que l'on fait).
-              * `-s ` (Fait une simulation des actions à mener sans rien toucher au système).
-              * `-y ` (Répond automatiquement oui à toutes les questions).
-              * `-u ` (Affiche les paquets mis à jour).
-              * `--purge`  (À utiliser conjointement avec remove pour supprimer tout ce qui peut l'​être fichiers de configuration par exemple, sauf ceux éventuellement présents dans **/home**).
-              * `--reinstall`  (Réinstaller les paquets avec leur version plus récente).
+* `-f` (Utilisée avec install ou remove cette option permet de réparer un système dont les dépendances sont défectueuses).
+* `-m`  (Ignore les paquets manquants (à éviter si on ne sait pas exactement ce que l'on fait).
+* `-s ` (Fait une simulation des actions à mener sans rien toucher au système).
+* `-y ` (Répond automatiquement oui à toutes les questions).
+* `-u ` (Affiche les paquets mis à jour).
+* `--purge`  (À utiliser conjointement avec remove pour supprimer tout ce qui peut l'​être fichiers de configuration par exemple, sauf ceux éventuellement présents dans **/home**).
+* `--reinstall`  (Réinstaller les paquets avec leur version plus récente).
               
 Exemples d'utilisation :
 * `sudo apt-get update` (Met à jour la liste des paquets disponibles).
