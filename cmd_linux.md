@@ -184,4 +184,5 @@ La redirection de la sortie standard (l'écran) vers un fichier permet de consul
 ## 5. Les programmes de connexion distante
 `ssh` ("secure shell")
 ## TP
-[TP1](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/exo.zip)
+* [TP1](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/exo.zip)
+* [TP2](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/TP1.zip)
