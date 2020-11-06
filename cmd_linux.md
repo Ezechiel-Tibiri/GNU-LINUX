@@ -49,7 +49,7 @@ numérotés)
 * `tail -n22 fichier` (affiche les 22 dernières lignes)
 * `tail -v fichier` ("verbose", affiche le nom du fichier)
 * `touch` (crée un fichier ou actualise la date de dernière modification)
-* `[gedit](https://help.gnome.org/users/gedit/stable/index.html.fr) /chemin/fichier ` (edite un fichier de manière graphique)
+* `gedit /chemin/fichier ` (la commande [**gedit**](https://help.gnome.org/users/gedit/stable/index.html.fr)edite un fichier de manière graphique)
 * `vi` ([l'éditeur en mode texte universel](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/Cours-vi-Ouaga-2019.pdf))
 * `emacs` (l'éditeur [GNU Emacs multi fonction pour](https://doc.ubuntu-fr.org/emacs) l'édition, les mails, les news,
 la programmation, la gestion des fichiers,...)
