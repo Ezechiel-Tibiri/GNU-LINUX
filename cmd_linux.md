@@ -193,8 +193,9 @@ ssh formationX@@master.univ-ouaga.bf
 
 Dans le champ, entrer le mot de passe `formationX` quand il est demandé
 
-# 6. Création et gestion d'un script bash
-## 6.1. Création de script
+## 6. Création et gestion d'un script bash <span style="color:red">
+      
+### 6.1. Création de script
 * La création d'un script bash n'est pas très compliquée. Il suffit de créer un fichier vierge, de lui donner un nom, de l'ouvrir par un double-clic et enfin d'écrire la ligne suivante comme première ligne de ce fichier.
 * sheband (prémière ligne de script)
 
@@ -203,7 +204,7 @@ Dans le champ, entrer le mot de passe `formationX` quand il est demandé
 ```
 * Remarque : il n'est pas nécessaire d'indiquer une extension pour le nom du fichier, la première ligne du fichier est suffisante pour que le système Linux reconnaisse qu'il s'agit d'un script bash.
 
-## 6.2. Édition d'un script
+### 6.2. Édition d'un script
 
 * On peut éditer le fichier qui contient un script en ligne de commande à l'aide d'une des lignes de commande suivantes :
 
@@ -211,7 +212,7 @@ Dans le champ, entrer le mot de passe `formationX` quand il est demandé
 gedit nom_du_script
 nano nom_du_script
 ```
-## 6.3. Lancement d'un script
+### 6.3. Lancement d'un script
 
 * Pour lancer un script, le mieux est de le faire avec une console.
 
