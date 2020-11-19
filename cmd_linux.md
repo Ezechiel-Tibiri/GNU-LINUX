@@ -184,6 +184,53 @@ La redirection de la sortie standard (l'écran) vers un fichier permet de consul
 
 ## 5. Les programmes de connexion distante
 `ssh` ("secure shell")
+# 6. Création et gestion d'un script bash
+## 6.1. Création de script
+* La création d'un script bash n'est pas très compliquée. Il suffit de créer un fichier vierge, de lui donner un nom, de l'ouvrir par un double-clic et enfin d'écrire la ligne suivante comme première ligne de ce fichier.
+* sheband (prémière ligne de script)
+
+```
+#!/bin/bash
+```
+* Remarque : il n'est pas nécessaire d'indiquer une extension pour le nom du fichier, la première ligne du fichier est suffisante pour que le système Linux reconnaisse qu'il s'agit d'un script bash.
+
+## 6.2. Édition d'un script
+
+* On peut éditer le fichier qui contient un script en ligne de commande à l'aide d'une des lignes de commande suivantes :
+
+```
+gedit nom_du_script
+nano nom_du_script
+```
+## 6.3. Lancement d'un script
+
+* Pour lancer un script, le mieux est de le faire avec une console.
+
+Avant de lancer le script, il est nécessaire de modifier les permissions le concernant et de le rendre exécutable. Cela se fait avec la ligne de commande suivante, si l'on est dans le répertoire contenant le script (sinon, il faudra indiquer le chemin complet du fichier, du style /home/répertoire_utilisateur/chemin/nom_du_script) :
+
+```
+chmod u+x nom_du_script
+```
+
+Une fois les permissions ainsi modifiées, le lancement d'un script se fait, par exemple, à l'aide de la ligne de commande suivante, si l'on est dans le répertoire contenant le script :
+
+```
+bash nom_du_script
+```
+
+# Documentation 
+Voici quelques sites pour plus de détails sur la programmation Bash :
+* [Les scripts bash](http://www.unixmaniax.fr/wiki/index.php?title=Les_scripts_bash)
+* [Documentation pour débutant](https://guidespratiques.traduc.org/guides/vf/Bash-Beginners-Guide/Bash-Beginners-Guide.html)
+* [encore plus de la documentation](https://abs.traduc.org/abs-fr/)
+
+Et sur des commandes utiles 
+
+* [Les commandes Bash](http://www.unixmaniax.fr/wiki/index.php?title=Bash_-_les_commandes)
+* [Commandes partie 1](http://www.softndesign.org/manuels/unix-1.html)
+* [Commandes partie 2](http://www.softndesign.org/manuels/unix-2.html)
+* [Commandes partie 3](http://www.softndesign.org/manuels/unix-3.html)
+
 ## TP
 * [TP1](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/exo.zip)
 * [TP2](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/TP1.zip)
