@@ -193,7 +193,7 @@ ssh formationX@@master.univ-ouaga.bf
 
 Dans le champ, entrer le mot de passe `formationX` quand il est demandé
 
-## 6. ```diff -Création et gestion d'un script bash diff```
+## 6. <span style="color:red">some Création et gestion d'un script bash text</span>
       
 ### 6.1. Création de script
 * La création d'un script bash n'est pas très compliquée. Il suffit de créer un fichier vierge, de lui donner un nom, de l'ouvrir par un double-clic et enfin d'écrire la ligne suivante comme première ligne de ce fichier.
