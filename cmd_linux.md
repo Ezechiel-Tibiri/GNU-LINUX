@@ -146,7 +146,7 @@ Exemples d'utilisation :
 
 La redirection de la sortie standard (l'écran) vers un fichier permet de consulter le résultat ultérieurement et de le conserver. La redirection de l'entrée standard (le clavier) est moins usitée .La redirection entre processus  (entre commande ou entre programme avec le tube ou le pipe) permet de créer des "pipelines", c'est à dire une seule ligne de commande constituée d'une succession de commandes avec la sortie de chacune redirigée vers l'entrée de la suivante.
 
-* `|`(pipe AltGr+6)
+* `|`(pipe **AltGr+6**)
 * `commande1 | commande2`
 * `ls | cat`
 * `cat fichier | lp`
@@ -184,6 +184,15 @@ La redirection de la sortie standard (l'écran) vers un fichier permet de consul
 
 ## 5. Les programmes de connexion distante
 `ssh` ("secure shell")
+### Exercice 1: Se connecter à un serveur Linux avec ```ssh```
+* 1. Dans le shell taper
+```
+ssh formationX@@master.univ-ouaga.bf
+```
+* X = [1-15]
+
+Dans le champ, entrer le mot de passe `formationX` quand il est demandé
+
 # 6. Création et gestion d'un script bash
 ## 6.1. Création de script
 * La création d'un script bash n'est pas très compliquée. Il suffit de créer un fichier vierge, de lui donner un nom, de l'ouvrir par un double-clic et enfin d'écrire la ligne suivante comme première ligne de ce fichier.
