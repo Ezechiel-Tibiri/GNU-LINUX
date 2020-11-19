@@ -246,5 +246,5 @@ Et sur des commandes utiles
 * [TP2](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/TP1.zip)
 * [TP3](https://github.com/Ezechiel-Tibiri/GNU-LINUX/blob/main/TP3.zip)
 * Création de script (home work pour demain)
->* Créer un script nommé **script2.sh** qui va deplacer tous les fichiers _.fasta_ dans un repertoir appelé **FASTA**, puis les archiver.
+>* Créer un script nommé **script2.sh** qui va deplacer tous les fichiers _.fasta_ contenu dans `/home/.../formation_linux/`dans un nouveau repertoir appelé **FASTA**, puis les archiver.
 >* Créer un script nommé **script3.sh** qui afficher dans le shell : `Je me nomme ..., de nationalité..., présentement inscrit en ...(Master/thèse)`
