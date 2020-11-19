@@ -1,4 +1,4 @@
-## 1.<span style="color:red">Les commandes de base de LINUX</span>
+##  1.Les commandes de base de LINUX
 ### 1.1. Les commandes de gestion des répertoires et des fichiers
 * `pwd` (affiche le chemin absolu du répertoire courant)
 * `ls` (list, affiche les répertoires et les fichiers du répertoire actif)
@@ -193,7 +193,7 @@ ssh formationX@@master.univ-ouaga.bf
 
 Dans le champ, entrer le mot de passe `formationX` quand il est demandé
 
-## 6.  ```diff - Création et gestion d'un script bash```
+>## 6.  Création et gestion d'un script bash
       
 ### 6.1. Création de script
 * La création d'un script bash n'est pas très compliquée. Il suffit de créer un fichier vierge, de lui donner un nom, de l'ouvrir par un double-clic et enfin d'écrire la ligne suivante comme première ligne de ce fichier.
