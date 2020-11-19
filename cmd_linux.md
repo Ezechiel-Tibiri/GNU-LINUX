@@ -191,7 +191,7 @@ ssh formationX@@master.univ-ouaga.bf
 ```
 * X = [1-15]
 
-Dans le champ, entrer le mot de passe <span style="color:red">`formationX`</span> quand il est demandé
+Dans le champ, entrer le mot de passe <span style="color:red">formationX</span> quand il est demandé
 
 >## 6.  Création et gestion d'un script bash
       
