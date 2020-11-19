@@ -187,7 +187,7 @@ La redirection de la sortie standard (l'écran) vers un fichier permet de consul
 ### Exercice 1: Se connecter à un serveur Linux avec ```ssh```
 * 1. Dans le shell taper
 ```
-ssh formationX@@master.univ-ouaga.bf
+ssh formationX@master.univ-ouaga.bf
 ```
 * X = [1-15]
 
