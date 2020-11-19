@@ -1,4 +1,4 @@
-## 1. <span style="color:red"> Les commandes de base de LINUX </span>
+## 1.  Les commandes de base de LINUX <span style="color:red"></span>
 ### 1.1. Les commandes de gestion des répertoires et des fichiers
 * `pwd` (affiche le chemin absolu du répertoire courant)
 * `ls` (list, affiche les répertoires et les fichiers du répertoire actif)
