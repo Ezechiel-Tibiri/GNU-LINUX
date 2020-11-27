@@ -248,3 +248,19 @@ Et sur des commandes utiles
 * Création de script (home work pour demain)
 >* Créer un script nommé **script2.sh** qui va deplacer tous les fichiers _.fasta_ contenu dans `/home/.../formation_linux/`dans un nouveau repertoir appelé **FASTA**, puis les archiver.
 >* Créer un script nommé **script3.sh** qui afficher dans le shell : `Je me nomme ..., de nationalité..., présentement inscrit en ...(Master/thèse)`
+
+# Evaluation
+Créer un script *bash* nommé _Nom-Prenom_evaluation.sh_ qui sera capable de :
+* 1. Creer un sous-repertoire appéllé _EVALUATION_ qui sera placé dans le repertoire _Formation_linux_ (2pts)
+* 2. Télécharger une séquence et le placé dans le repertoire _EVALUATION_ (créé précedement) en suivant le lien  https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz, puis decomprésser le fichier **.gz** (2pts)
+* 3. Afficher la première ligne du fichier **GCF_009858895.2_ASM985889v3_genomic.fna**, de quel organisme s'agit-il et quel est sont numéro d'accession genBank? Affichier la taille et le nombre de ligne du fichier en question. (2pts)
+* 4. Donner le nombre de site de reconnaissance *BamH*I en `5'-GGATCC-3'` et en `3'-CCTAGG-5'` du fichier **GCF_009858895.2_ASM985889v3_genomic.fna**  (2pts)
+* 5. Quels sont les différents attributs (droits ou permission) du fichier **GCF_009858895.2_ASM985889v3_genomic.fna** ? (Penser à l'*user*, *group*, *other*) (2pts)
+* 6. Attribuer la permission d'**execution** et rien que cela à tous les utilisateurs (2pts)
+* 7. Extraire les 17 premières lignes et les rediriger vers un nouveau fichier nommé **GCF_009858895.2_ASM985889v3_genomic.fasta** (2pts)
+* 8. Combien de `ATG` il y 'a dans le nouveau fichier **GCF_009858895.2_ASM985889v3_genomic.fasta** (2pts)
+* 9. Ajouter 20N (NNNNNNNNNNNNNNNNNNNN) à la fin du ficheir **GCF_009858895.2_ASM985889v3_genomic.fasta** (2pts)
+* 10. Deposer votre script en utilisant `ssh` (*Nom-Prenom_evaluation.sh*) sur le repertoire `/export/share` du cluster de l'Univesité Joseph Ki-Zerbo (UJKZ) via votre compte `formationX` (2pts)
+```
+                                                                          Bon courage!
+```
