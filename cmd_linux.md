@@ -264,3 +264,25 @@ Créer un script *bash* nommé _Nom-Prenom_evaluation.sh_ qui sera capable de :
 ```
                                                                           Bon courage!
 ```
+
+# Evaluation 2
+
+Créer un script *bash* nommé _Nom-Prenom_evaluation1.sh_ qui sera capable de :
+
+* 1. Télécharger le fichier GFF et le placé dans le repertoire _EVALUATION_ (créé précedement) en suivant le lien https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/999/975/GCA_000999975.1_ASM99997v1/GCA_000999975.1_ASM99997v1_genomic.gff.gz
+
+* 2. Faire un clone (copie) du fichier **GCA_000999975.1_ASM99997v1_genomic.gff.gz**; le renommer **GCA_000999975.1_ASM99997v1_genomic1.gff.gz** et decomprésser le nouveau fichier **.gz**
+
+* 3. Afficher dans un premier temps le nombre de lignes total du fichier puis uniquement la 850 ligne **GCA_000999975.1_ASM99997v1_genomic1.gff**
+
+* 4. Faire un trie alphanumerique en colonne **2** sur le fichier **GCA_000999975.1_ASM99997v1_genomic1.gff** et le rediriger vers un nouveau fichier appélé **GCA_000999975.1_ASM99997v1_genomic1_sort-k2.gff** puis compter le nombre de fois que le mot _gene_ apparait dans le nouveau fichier
+
+* 5. Selectionne les lignes 1250 à 1350 du fichier **GCA_000999975.1_ASM99997v1_genomic1.gff** et les rediriger vers un nouveau fichier appelé **GCA_000999975.1_ASM99997v1_genomic1_sed.gff** puis compté le nombre de fois que CDS apparait dans le nouveau fichier
+
+* 6. Deposer votre script en utilisant `scp` (*Nom-Prenom_evaluation1.sh*) sur le repertoire `/export/share` du cluster de l'Univesité Joseph Ki-Zerbo (UJKZ) via votre compte `formationX` 
+
+**Attention la double utilisation d'un même compte n'est pas autorisé!!!**
+
+```
+                                                                  BON COURAGE À TOUS.T.E.S
+```
