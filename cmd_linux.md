@@ -273,7 +273,7 @@ Créer un script *bash* nommé _Nom-Prenom_evaluation1.sh_ qui sera capable de :
 
 * 2. Faire un clone (copie) du fichier **GCA_000999975.1_ASM99997v1_genomic.gff.gz**; le renommer **GCA_000999975.1_ASM99997v1_genomic1.gff.gz** et decomprésser le nouveau fichier **.gz**
 
-* 3. Afficher dans un premier temps le nombre de lignes total du fichier puis uniquement la 850 ligne **GCA_000999975.1_ASM99997v1_genomic1.gff**
+* 3. Afficher dans un premier temps le nombre de lignes total du fichier puis uniquement la 850ème ligne **GCA_000999975.1_ASM99997v1_genomic1.gff**
 
 * 4. Faire un trie alphanumerique en colonne **2** sur le fichier **GCA_000999975.1_ASM99997v1_genomic1.gff** et le rediriger vers un nouveau fichier appélé **GCA_000999975.1_ASM99997v1_genomic1_sort-k2.gff** puis compter le nombre de fois que le mot _gene_ apparait dans le nouveau fichier
 
