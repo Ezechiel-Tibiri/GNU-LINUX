@@ -20,7 +20,7 @@
 * `cp` rapport*.txt sauvegarde
 * `cp *` dossier (copie
 * `mv` (move, renomme et déplace un fichier)
-* `mv` source destination
+* `mv` [source] [destination]
 * `mv *` dossier (déplace tous les fichiers du répertoire actif vers le répertoire
 dossier)
 * `rm` (remove, éfface!!!)
@@ -116,7 +116,7 @@ Permet d'exécuter des commandes en tant qu'un autre utilisateur, donc avec d'au
               * `-s` : Importe les variables d'environnement du shell
               * `-k` : Lorsque l'on utilise sudo, il garde en mémoire le mot de passe ; cette option déconnecte l'utilisateur et forcera à redemander un mot de passe si sudo est exécuté avant le timeout défini.
 ```              
- apt-get
+ apt ou apt-get
 ```
 * Signification : *avanced package tool - get*
 
@@ -139,9 +139,9 @@ Options les plus fréquentes :
 * `--reinstall`  (Réinstaller les paquets avec leur version plus récente).
               
 Exemples d'utilisation :
-* `sudo apt-get update` (Met à jour la liste des paquets disponibles).
-* `sudo apt-get upgrade` (Met à jour tous les paquets ​installés).
-* `sudo apt-get install nom_paquet` (pour installer un paquets) 
+* `sudo apt update` (Met à jour la liste des paquets disponibles).
+* `sudo apt upgrade` (Met à jour tous les paquets ​installés).
+* `sudo apt install nom_paquet` (pour installer un paquets) 
               
 ## 3. Les opérateurs de redirection des Entrées/Sorties
 
