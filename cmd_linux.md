@@ -8,9 +8,14 @@
 * `cd` (change directory)
 * `cp` chemin (vers le répertoire dont le chemin absolu est donné)
 * `cd ..` (répertoire parent)
-* `cd ~` (répertoire de base)
+* <span style="color: #4CACBC;"> `cd ~` (répertoire de base)
 * `cd -` (répertoire précedent)
 * `cd /` (répertoire racine)
+* `mkdir` (créer un répertoire)
+* `touch` (créer un fichier vide)
+* `mkdir` répertoire
+* `rmdir` (effacer un répertoire)
+* `rmdir` dossier (supprime un répertoire vide)
 * `cp` (copie)
 * `cp` rapport*.txt sauvegarde
 * `cp *` dossier (copie
@@ -18,10 +23,6 @@
 * `mv` source destination
 * `mv *` dossier (déplace tous les fichiers du répertoire actif vers le répertoire
 dossier)
-* `mkdir` (créer un répertoire)
-* `mkdir` répertoire
-* `rmdir` (effacer un répertoire)
-* `rmdir` dossier (supprime un répertoire vide)
 * `rm` (remove, éfface!!!)
 * `rm -R` (enlèvement récursif!!!)
 * `rm` fichier
